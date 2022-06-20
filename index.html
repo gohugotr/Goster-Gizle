@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Göster / Gizle</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="d1">Daire1</div>
+    <div class="d2">Daire2</div>
+    <div class="butonlar">
+        <button class="b1">Göster</button>
+        <button class="b2">Gizle</button>
+        <button class="b3">Gizle</button>
+    </div>
+    <script type="text/javascript">
+        let b1 = document.getElementsByClassName('b1')[0];
+        let b2 = document.getElementsByClassName('b2')[0];
+        let b3 = document.getElementsByClassName('b3')[0];
+        let d1 = document.getElementsByClassName('d1')[0];
+        let d2 = document.getElementsByClassName('d2')[0];
+        b1.addEventListener('click', goster);
+        b2.addEventListener('click', gizle);
+        b3.addEventListener('click', gecis);
+        function goster(){
+            d1.style.display="flex";
+            d2.style.display="flex";
+        }
+        function gizle(){
+            d1.style.display="none";
+            d2.style.display="none";
+        }
+        function gecis(){
+            if (b3.textContent=='Gizle') {
+                b3.innerHTML='Göster';
+                d1.style.display="none";
+                d2.style.display="none";
+            } else{
+                b3.innerHTML='Gizle';
+                d1.style.display="flex";
+                d2.style.display="flex";
+            }   
+        }
+    </script>
+</body>
+</html>

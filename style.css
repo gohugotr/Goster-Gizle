@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+button{
+    background-color:rgb(207, 17, 77);
+    color:white;
+    border: 2px solid #fff;
+    border-radius:16px;
+    width:150px;
+    height:40px;
+    margin:20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.d1{
+    border-radius: 50%;
+    border: 2px solid salmon;
+    width:5rem;
+    height: 5rem;
+    background: rgba(230,130,100,0.5);
+    padding: 7%;
+    margin: 0 auto;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+.d2{
+    border-radius: 50%;
+    border: 2px solid rgb(11,110,37);
+    width:5rem;
+    height: 5rem;
+    background: rgba(33, 231, 26,0.5);
+    padding: 7%;
+    margin: 0 auto;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+.butonlar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gecis{
+    display: none;
+}
